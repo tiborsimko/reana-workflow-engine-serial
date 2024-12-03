@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 #
 # This file is part of REANA.
-# Copyright (C) 2019, 2020, 2021, 2022 CERN.
+# Copyright (C) 2019, 2020, 2021, 2022, 2023, 2024 CERN.
 #
 # REANA is free software; you can redistribute it and/or modify it
 # under the terms of the MIT License; see LICENSE file for more details.
@@ -36,6 +36,9 @@ def build_job_spec(
     htcondor_accounting_group,
     slurm_partition,
     slurm_time,
+    c4p_cpu_cores,
+    c4p_memory_limit,
+    c4p_additional_requirements,
 ):
     """Build job specification to passed to RJC."""
     job_spec = {
@@ -58,6 +61,9 @@ def build_job_spec(
         "htcondor_accounting_group": htcondor_accounting_group,
         "slurm_partition": slurm_partition,
         "slurm_time": slurm_time,
+        "c4p_cpu_cores": c4p_cpu_cores,
+        "c4p_memory_limit": c4p_memory_limit,
+        "c4p_additional_requirements": c4p_additional_requirements,
     }
     return job_spec
 
