@@ -42,7 +42,7 @@ for key, reqs in extras_require.items():
     extras_require["all"].extend(reqs)
 
 install_requires = [
-    "reana-commons>=0.95.0a2,<0.96.0",
+    "reana-commons>=0.95.0a7,<0.96.0",
 ]
 
 packages = find_packages()
