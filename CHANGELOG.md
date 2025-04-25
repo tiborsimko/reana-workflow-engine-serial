@@ -1,5 +1,63 @@
 # Changelog
 
+## [0.9.5](https://github.com/tiborsimko/reana-workflow-engine-serial/compare/v0.9.4...0.9.5) (2025-04-25)
+
+
+### Build
+
+* **docker:** install correct extras of reana-commons submodule ([#196](https://github.com/tiborsimko/reana-workflow-engine-serial/issues/196)) ([b23f4df](https://github.com/tiborsimko/reana-workflow-engine-serial/commit/b23f4df602d80d62626e8e907181a8c710eb662f))
+* **docker:** non-editable submodules in "latest" mode ([#190](https://github.com/tiborsimko/reana-workflow-engine-serial/issues/190)) ([03a15cf](https://github.com/tiborsimko/reana-workflow-engine-serial/commit/03a15cfa7973152f9923ecade412d8eab3ea80e3))
+* **docker:** pin setuptools 70 ([#216](https://github.com/tiborsimko/reana-workflow-engine-serial/issues/216)) ([f94d003](https://github.com/tiborsimko/reana-workflow-engine-serial/commit/f94d0036ded9562155528d52f33110e43c954384))
+* **python:** bump all required packages as of 2024-03-04 ([#200](https://github.com/tiborsimko/reana-workflow-engine-serial/issues/200)) ([ffc8aec](https://github.com/tiborsimko/reana-workflow-engine-serial/commit/ffc8aec739e2284f301586d47618ff6c4142643a))
+* **python:** bump shared REANA packages as of 2024-03-04 ([#200](https://github.com/tiborsimko/reana-workflow-engine-serial/issues/200)) ([47c26cc](https://github.com/tiborsimko/reana-workflow-engine-serial/commit/47c26ccfbfdfc7419c4a6fab1d7abf95a667e4e2))
+* **python:** bump shared REANA packages as of 2024-11-28 ([#218](https://github.com/tiborsimko/reana-workflow-engine-serial/issues/218)) ([430fd04](https://github.com/tiborsimko/reana-workflow-engine-serial/commit/430fd04acb6485754a0cc5fa4dbeefd3aaa022e4))
+
+
+### Features
+
+* **tasks:** allow Compute4PUNCH backend options ([#210](https://github.com/tiborsimko/reana-workflow-engine-serial/issues/210)) ([a6313f2](https://github.com/tiborsimko/reana-workflow-engine-serial/commit/a6313f22dcdcab08a84b3dd6c8ce7386122d7400))
+* **tasks:** pass K8S requests/limits to job controller ([#221](https://github.com/tiborsimko/reana-workflow-engine-serial/issues/221)) ([9c02478](https://github.com/tiborsimko/reana-workflow-engine-serial/commit/9c02478c32a2d340b9ef9f3ee65c1781856a3155))
+
+
+### Bug fixes
+
+* **progress:** handle stopped jobs ([#195](https://github.com/tiborsimko/reana-workflow-engine-serial/issues/195)) ([a232a76](https://github.com/tiborsimko/reana-workflow-engine-serial/commit/a232a76627e09bfb401de4f547540c6012357986))
+
+
+### Code refactoring
+
+* **docs:** move from reST to Markdown ([#198](https://github.com/tiborsimko/reana-workflow-engine-serial/issues/198)) ([7507d12](https://github.com/tiborsimko/reana-workflow-engine-serial/commit/7507d1243af43f4621e117f4f92569f4dd7271f6))
+
+
+### Continuous integration
+
+* add hadolint and flake8 linters ([1145d9d](https://github.com/tiborsimko/reana-workflow-engine-serial/commit/1145d9d58959261a631b738fae1732aefa8d0b79))
+* added github actions workflow ([08a62e5](https://github.com/tiborsimko/reana-workflow-engine-serial/commit/08a62e5f383132a911d6912b50442c18e395ee3d))
+* **commitlint:** addition of commit message linter ([#191](https://github.com/tiborsimko/reana-workflow-engine-serial/issues/191)) ([b7a6ef1](https://github.com/tiborsimko/reana-workflow-engine-serial/commit/b7a6ef18dae95efae7af791094b5ff79369705b0))
+* **commitlint:** allow release commit style ([#201](https://github.com/tiborsimko/reana-workflow-engine-serial/issues/201)) ([b50b6d0](https://github.com/tiborsimko/reana-workflow-engine-serial/commit/b50b6d0398fc6d6e4c4704d3698d811b7088921d))
+* **commitlint:** check for the presence of concrete PR number ([#197](https://github.com/tiborsimko/reana-workflow-engine-serial/issues/197)) ([1813ac3](https://github.com/tiborsimko/reana-workflow-engine-serial/commit/1813ac3a88cd8e33a59040c6bd72ed048a151654))
+* pin hadolint version ([a77f798](https://github.com/tiborsimko/reana-workflow-engine-serial/commit/a77f7982d06be52656d7ee12f65f14264c21dd81))
+* publish docker image after new release ([d595d57](https://github.com/tiborsimko/reana-workflow-engine-serial/commit/d595d57956811960df366ea28be30cc96742383e))
+* **release-please:** initial configuration ([#191](https://github.com/tiborsimko/reana-workflow-engine-serial/issues/191)) ([d40a675](https://github.com/tiborsimko/reana-workflow-engine-serial/commit/d40a675cab6b6e8c7631d503358016d427bdac3c))
+* **release-please:** update version in Dockerfile ([#194](https://github.com/tiborsimko/reana-workflow-engine-serial/issues/194)) ([52c34ec](https://github.com/tiborsimko/reana-workflow-engine-serial/commit/52c34ec2003fd09b8a65ef3cff61b7f9a105041e))
+* remove older versions from python tests ([f1f583d](https://github.com/tiborsimko/reana-workflow-engine-serial/commit/f1f583de22c2f4205110f6131a13fe986d5a6911))
+* **runners:** upgrade CI runners to Ubuntu 22.04 ([#224](https://github.com/tiborsimko/reana-workflow-engine-serial/issues/224)) ([1ff9187](https://github.com/tiborsimko/reana-workflow-engine-serial/commit/1ff9187016a404aa37d06b32ea61ef17f3767b01))
+* **shellcheck:** fix exit code propagation ([#197](https://github.com/tiborsimko/reana-workflow-engine-serial/issues/197)) ([5565b29](https://github.com/tiborsimko/reana-workflow-engine-serial/commit/5565b29ac7b431561af2cd43e6ed882bbdf57126))
+* update all actions ([b12f92f](https://github.com/tiborsimko/reana-workflow-engine-serial/commit/b12f92fdb338434eb92f56e548b973de912696a4))
+
+
+### Documentation
+
+* add .readthedocs.yaml to migrate to RTD v2 ([ad92e7c](https://github.com/tiborsimko/reana-workflow-engine-serial/commit/ad92e7ccbd038f3bf3fd19f0e8e94ad68291c92d))
+* add Sinclert Perez to authors ([b33fbce](https://github.com/tiborsimko/reana-workflow-engine-serial/commit/b33fbcea987347408f684423ed018db11e5c5d9b))
+* addition of overview.rst ([a6cd116](https://github.com/tiborsimko/reana-workflow-engine-serial/commit/a6cd11659e4b8a0aa6e085926d75a6eb701c2df2))
+* **authors:** complete list of contributors ([#199](https://github.com/tiborsimko/reana-workflow-engine-serial/issues/199)) ([e9b25b6](https://github.com/tiborsimko/reana-workflow-engine-serial/commit/e9b25b6ab37421971d02c52422ed19fce249b4ea))
+* new logo, panel verbiage and links ([4b3ea33](https://github.com/tiborsimko/reana-workflow-engine-serial/commit/4b3ea33ea97faccf782ef29401b5beb7981f1a3a))
+* pydocstyle fixes ([0310544](https://github.com/tiborsimko/reana-workflow-engine-serial/commit/0310544b4fba4bc930a611d7f32cc6c766705104))
+* set default language to English ([eb2ecc1](https://github.com/tiborsimko/reana-workflow-engine-serial/commit/eb2ecc1fa6d900e7896667542292a8bf63af5003))
+* single-page RTFD outline ([5bcc992](https://github.com/tiborsimko/reana-workflow-engine-serial/commit/5bcc992ab513f96677542eeb6de7c2117442cedf))
+* update changelog ([c0d90b7](https://github.com/tiborsimko/reana-workflow-engine-serial/commit/c0d90b75a1c36df851c49732cd11cc144ec1191a))
+
 ## [0.9.4](https://github.com/reanahub/reana-workflow-engine-serial/compare/0.9.3...0.9.4) (2024-11-29)
 
 
