@@ -15,6 +15,7 @@ include Dockerfile
 include LICENSE
 include pytest.ini
 exclude .readthedocs.yaml
+exclude .editorconfig
 prune docs/_build
 recursive-include reana_workflow_engine_serial *.py
 recursive-include reana_workflow_engine_serial *.json
