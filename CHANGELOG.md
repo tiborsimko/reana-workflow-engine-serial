@@ -1,3 +1,5 @@
+<!-- markdownlint-disable -->
+
 # Changelog
 
 ## [0.9.4](https://github.com/reanahub/reana-workflow-engine-serial/compare/0.9.3...0.9.4) (2024-11-29)

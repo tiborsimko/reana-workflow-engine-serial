@@ -9,9 +9,9 @@
 
 ## About
 
-REANA-Workflow-Engine-Serial is a component of the [REANA](http://www.reana.io/) reusable
-and reproducible research data analysis platform. It takes care of instantiating,
-executing and managing simple sequential computational workflows.
+REANA-Workflow-Engine-Serial is a component of the [REANA](http://www.reana.io/)
+reusable and reproducible research data analysis platform. It takes care of
+instantiating, executing and managing simple sequential computational workflows.
 
 ## Features
 
