@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 #
 # This file is part of REANA.
-# Copyright (C) 2019, 2020, 2021, 2022, 2023, 2024 CERN.
+# Copyright (C) 2019, 2020, 2021, 2022, 2023, 2024, 2025 CERN.
 #
 # REANA is free software; you can redistribute it and/or modify it
 # under the terms of the MIT License; see LICENSE file for more details.
@@ -28,6 +28,9 @@ def build_job_spec(
     kerberos,
     unpacked_image,
     kubernetes_uid,
+    kubernetes_cpu_request,
+    kubernetes_cpu_limit,
+    kubernetes_memory_request,
     kubernetes_memory_limit,
     kubernetes_job_timeout,
     voms_proxy,
@@ -53,6 +56,9 @@ def build_job_spec(
         "kerberos": kerberos,
         "unpacked_img": unpacked_image,
         "kubernetes_uid": kubernetes_uid,
+        "kubernetes_cpu_request": kubernetes_cpu_request,
+        "kubernetes_cpu_limit": kubernetes_cpu_limit,
+        "kubernetes_memory_request": kubernetes_memory_request,
         "kubernetes_memory_limit": kubernetes_memory_limit,
         "kubernetes_job_timeout": kubernetes_job_timeout,
         "voms_proxy": voms_proxy,

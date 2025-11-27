@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 #
 # This file is part of REANA.
-# Copyright (C) 2018, 2019, 2020, 2021, 2022, 2023, 2024 CERN.
+# Copyright (C) 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025 CERN.
 #
 # REANA is free software; you can redistribute it and/or modify it
 # under the terms of the MIT License; see LICENSE file for more details.
@@ -116,6 +116,9 @@ def run_step(
             kerberos=step.get("kerberos", WORKFLOW_KERBEROS),
             unpacked_image=step.get("unpacked_image", False),
             kubernetes_uid=step.get("kubernetes_uid"),
+            kubernetes_cpu_request=step.get("kubernetes_cpu_request"),
+            kubernetes_cpu_limit=step.get("kubernetes_cpu_limit"),
+            kubernetes_memory_request=step.get("kubernetes_memory_request"),
             kubernetes_memory_limit=step.get("kubernetes_memory_limit"),
             kubernetes_job_timeout=step.get("kubernetes_job_timeout"),
             voms_proxy=step.get("voms_proxy", False),
