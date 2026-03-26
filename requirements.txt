@@ -36,7 +36,7 @@ parse==1.20.2             # via reana-commons
 python-dateutil==2.9.0.post0  # via arrow, bravado, bravado-core
 pytz==2025.2              # via bravado-core
 pyyaml==6.0.3             # via bravado, bravado-core, reana-commons, swagger-spec-validator
-reana-commons==0.95.0a12  # via reana-workflow-engine-serial (setup.py)
+reana-commons==0.95.0a14	# via reana-workflow-engine-serial (setup.py)
 referencing==0.37.0       # via jsonschema, jsonschema-specifications
 requests==2.32.5          # via bravado, bravado-core
 rfc3339-validator==0.1.4  # via jsonschema
