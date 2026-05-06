@@ -31,7 +31,7 @@ extras_require = {
         "Jinja2<3.1",
     ],
     "tests": [
-        "pytest-reana>=0.95.0a2,<0.96.0",
+        "reana-commons[tests]>=0.95.0a15,<0.96.0",
     ],
 }
 
